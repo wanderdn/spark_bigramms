@@ -1,0 +1,112 @@
+10-05-2019 16:54:43.252 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    com.fasterxml.jackson.module.scala.util.TopologicalSorter.toList(FactorySorter.scala:36)
+
+The following method did not exist:
+
+    scala.Predef$.refArrayOps([Ljava/lang/Object;)Lscala/collection/mutable/ArrayOps;
+
+The method's class, scala.Predef$, is available from the following locations:
+
+    jar:file:/home/wanderdn/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/36b234834d8f842cdde963c8591efae6cf413e3f/scala-library-2.12.8.jar!/scala/Predef$.class
+
+It was loaded from the following location:
+
+    file:/home/wanderdn/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/36b234834d8f842cdde963c8591efae6cf413e3f/scala-library-2.12.8.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of scala.Predef$
+
+10-05-2019 16:55:31.145 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    com.fasterxml.jackson.module.scala.util.TopologicalSorter.toList(FactorySorter.scala:36)
+
+The following method did not exist:
+
+    scala.Predef$.refArrayOps([Ljava/lang/Object;)Lscala/collection/mutable/ArrayOps;
+
+The method's class, scala.Predef$, is available from the following locations:
+
+    jar:file:/home/wanderdn/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/36b234834d8f842cdde963c8591efae6cf413e3f/scala-library-2.12.8.jar!/scala/Predef$.class
+
+It was loaded from the following location:
+
+    file:/home/wanderdn/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/36b234834d8f842cdde963c8591efae6cf413e3f/scala-library-2.12.8.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of scala.Predef$
+
+10-05-2019 16:55:52.356 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: -2
+	at java.util.stream.ReferencePipeline.limit(ReferencePipeline.java:400)
+	at com.hw.spark.SparkService.onApplicationEvent(SparkService.java:46)
+	at com.hw.spark.SparkService.onApplicationEvent(SparkService.java:22)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:896)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.hw.spark.SparkApplication.main(SparkApplication.java:10)
+10-05-2019 16:57:47.904 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: -2
+	at java.util.stream.ReferencePipeline.limit(ReferencePipeline.java:400)
+	at com.hw.spark.SparkService.onApplicationEvent(SparkService.java:46)
+	at com.hw.spark.SparkService.onApplicationEvent(SparkService.java:22)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:896)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.hw.spark.SparkApplication.main(SparkApplication.java:10)
+10-05-2019 16:59:13.248 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalArgumentException: -2
+	at java.util.stream.ReferencePipeline.limit(ReferencePipeline.java:400)
+	at com.hw.spark.SparkService.onApplicationEvent(SparkService.java:46)
+	at com.hw.spark.SparkService.onApplicationEvent(SparkService.java:22)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:896)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.hw.spark.SparkApplication.main(SparkApplication.java:10)

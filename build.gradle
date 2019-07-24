@@ -1,0 +1,42 @@
+
+buildscript {
+	repositories {
+		jcenter()
+	}
+	dependencies {
+		classpath 'com.github.jengelman.gradle.plugins:shadow:4.0.4'
+	}
+}
+plugins {
+	id 'java'
+}
+apply plugin: 'com.github.johnrengelman.shadow'
+
+apply plugin: 'application'
+
+group = 'com.hw'
+version = '0.0.1'
+sourceCompatibility = '1.8'
+repositories {
+	mavenCentral()
+}
+
+application{
+	mainClassName = 'com.hw.spark.SparkApplication'
+
+}
+
+dependencies {
+	compile group: 'org.apache.spark', name: 'spark-core_2.12', version: '2.4.2'
+
+}
+
+shadowJar {
+	//   exclude 'spark-core_2.11'
+	//    exclude 'spark-hive_2.11'
+	//   exclude 'spark-sql_2.11'
+	zip64 true
+	manifest {
+		attributes "Main-Class": "package com.hadoop.hw.HwApplication"
+	}
+}
